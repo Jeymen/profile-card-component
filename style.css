@@ -1,0 +1,156 @@
+:root {
+  --dark-gray: hsl(229, 23%, 23%);
+  --light-gray: hsl(227, 10%, 46%);
+  --blue: hsl(185, 75%, 39%);
+  --light-white-gray: hsl(0, 0%, 91%);
+}
+body {
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+  background-color: var(--blue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  color: var(--light-gray);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  max-width: 19rem;
+  border-radius: 0.9375rem;
+}
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.profile-picture {
+  border: 0.25rem white solid;
+  border-radius: 3.36em;
+  position: absolute;
+  bottom: -50px;
+  align-items: center;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: auto 2.5fr 1.5fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5em;
+  row-gap: 0.6em;
+  margin: 4.375rem 0rem 1.5rem 0rem;
+}
+
+.name {
+  grid-row: 1;
+  grid-column: 1;
+  margin: 0 auto;
+  font-size: 1.125rem;
+}
+
+.age {
+  grid-row: 1;
+  grid-column: 2;
+  margin: 0 auto;
+}
+
+.city {
+  grid-row: 2;
+  grid-column: 1;
+  justify-self: center;
+  font-size: 0.9375rem;
+  margin: 0 auto;
+}
+
+.line {
+  width: 100%;
+  border: 0;
+  border-bottom: 0.1rem solid var(--light-white-gray);
+  margin: 0 auto;
+}
+
+.line {
+  color: hsl(215, 32%, 27%);
+  border-width: 0.13em;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: auto 2.5fr 1.5fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3em;
+  row-gap: 0.2em;
+  margin: 1.25rem 0rem 1.25rem 0rem;
+}
+
+.followers-number {
+  margin: 0 auto;
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 1.125rem;
+}
+
+.followers-text {
+  margin: 0 auto;
+  grid-row: 2;
+  grid-column: 1;
+  font-size: 0.8125rem;
+}
+
+.likes-number {
+  margin: 0 auto;
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 1.125rem;
+}
+
+.likes-text {
+  margin: 0 auto;
+  grid-row: 2;
+  grid-column: 2;
+  font-size: 0.8125rem;
+}
+
+.photos-number {
+  margin: 0 auto;
+  grid-row: 1;
+  grid-column: 3;
+  font-size: 1.125rem;
+}
+
+.photos-text {
+  margin: 0 auto;
+  grid-row: 2;
+  grid-column: 3;
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 360px) {
+  .card {
+    max-width: 23rem;
+  }
+}
